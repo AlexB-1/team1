@@ -1,0 +1,4 @@
+{
+  "mongoURI": "mongodb+srv://DonC:don123@cluster0-swvdx.mongodb.net/test?retryWrites=true",
+  "jwtSecret": "sta_topSecret"
+}
