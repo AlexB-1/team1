@@ -1,15 +1,50 @@
-import React, { Component } from "react";
-import { Navbar, Nav, Container } from "react-bootstrap";
+import React, { Component, Fragment } from "react";
+import {
+  Navbar,
+  Nav,
+  Container,
+  Collapse,
+  NavbarToggler,
+  NavItem
+} from "react-bootstrap";
 import { Route, Link, Redirect } from "react-router-dom";
+import { connect } from "react-redux";
+import PropTypes from "prop-types";
 import SprintPage from "./sprint/SprintPage";
 import BacklogPage from "./backlog/BacklogPage";
 import AdminPage from "./admin/AdminPage";
 import ChatPage from "./chat/ChatPage";
-
 import LoginModal from "./auth/LoginModal";
 
 class Main extends Component {
+  state = {
+    isOpen: false
+  };
+
+  static propTypes = {
+    auth: PropTypes.object.isRequired
+  };
+
+  toggle = () => {
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
+  };
+
   render() {
+    /*
+    const { isAuthenticated, user } = this.props.auth;
+
+    const authLinks = <Fragment />;
+    
+    const guestLinks = (
+      <Fragment>
+        <NavItem>
+          <LoginModal />
+        </NavItem>
+      </Fragment>
+    );*/
+
     return (
       <div>
         <Container>
@@ -46,7 +81,6 @@ class Main extends Component {
             <Route path="/backlog" exact component={BacklogPage} />
             <Route path="/admin" exact component={AdminPage} />
             <Route path="/chat" exact component={ChatPage} />
-
             <Route path="/auth" exact component={LoginModal} />
 
             <Redirect to="/sprint" />
@@ -57,4 +91,11 @@ class Main extends Component {
   }
 }
 
-export default Main;
+const mapStateToProps = state => ({
+  auth: state.auth
+});
+
+export default connect(
+  mapStateToProps,
+  null
+)(Main);
