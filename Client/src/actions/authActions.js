@@ -10,7 +10,7 @@ import {
   LOGOUT_SUCCESS,
   REGISTER_SUCCESS,
   REGISTER_FAIL
-} from "./types.js";
+} from "./types";
 
 // Check token & load user
 export const loadUser = () => (dispatch, getState) => {

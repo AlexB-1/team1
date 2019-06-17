@@ -1,24 +1,37 @@
-import { GET_ERRORS, CLEAR_ERRORS } from "../actions/types";
+import {
+  GET_ITEMS,
+  ADD_ITEM,
+  DELETE_ITEM,
+  ITEMS_LOADING
+} from "../actions/types";
 
 const initialState = {
-  msg: {},
-  status: null,
-  id: null
+  items: [],
+  loading: false
 };
 
 export default function(state = initialState, action) {
   switch (action.type) {
-    case GET_ERRORS:
+    case GET_ITEMS:
       return {
-        msg: action.payLoad.msg,
-        status: action.payLoad.status,
-        id: action.payLoad.id
+        ...state,
+        items: action.payLoad,
+        loading: false
       };
-    case CLEAR_ERRORS:
+    case DELETE_ITEM:
       return {
-        msg: {},
-        status: null,
-        id: null
+        ...state,
+        items: state.items.filter(item => item._id !== action.payLoad)
+      };
+    case ADD_ITEM:
+      return {
+        ...state,
+        items: [action.payLoad, ...state.items]
+      };
+    case ITEMS_LOADING:
+      return {
+        ...state,
+        loading: true
       };
     default:
       return state;
