@@ -56,29 +56,35 @@ class ItemModal extends Component {
             style={{ marginBottom: "2rem" }}
             onClick={this.toggle}
           >
-            Add Item
+            Create Issue
           </Button>
         ) : (
-          <h4 className="mb-3 ml-4">Please log in to manage items </h4>
+          <h4 className="mb-3 ml-4">Please log in to manage issues </h4>
         )}
 
         <Modal isOpen={this.state.modal} toggle={this.toggle}>
-          <ModalHeader toggle={this.toggle}>
-            Add to the Training List
-          </ModalHeader>
+          <ModalHeader toggle={this.toggle}>Add Issue to BackLog</ModalHeader>
           <ModalBody>
             <Form onSubmit={this.onSubmit}>
               <FormGroup>
-                <Label for="item">Item</Label>
+                <Label for="item">Issue</Label>
                 <Input
                   type="text"
                   name="name"
                   id="item"
-                  placeholder="e.g: Exercise; Weight; Sets; Reps"
+                  placeholder="e.g: Summary"
                   onChange={this.onChange}
                 />
+                <Input
+                  type="text"
+                  name="owner"
+                  id="owner"
+                  placeholder="e.g: Assigned To"
+                  onChange={this.onChange}
+                />
+
                 <Button color="dark" style={{ marginTop: "2rem" }} block>
-                  Add Item
+                  Create Issue
                 </Button>
               </FormGroup>
             </Form>

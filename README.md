@@ -1,5 +1,4 @@
 ---
-
 ---
 
 Tracking "Agile Project Management" Application
@@ -12,7 +11,6 @@ June 17, 2019
 
     Run live hosted on HerokuApp
     	https://sleepy-sierra-31439.herokuapp.com/
-
 
 ---
 
@@ -32,18 +30,16 @@ June 17, 2019
     	    c.	npm run server
     			    http://localhost:5000
 
-
 ---
 
     Database:
 
     	MongoDB Atlas
 
-    		Username: DonC
+    		Username: doncharest
     		Password: don123
 
-    		"mongoURI": "mongodb+srv://DonC:don123@cluster0-swvdx.mongodb.net/test?retryWrites=true"
-
+    		"mongoURI": "mongodb+srv://doncharest:don123@cluster0-o35im.mongodb.net/test?retryWrites=true&w=majority"
 
 ---
 
@@ -52,7 +48,6 @@ June 17, 2019
     	HEROKU
     		sleepy-sierra-31439
     			https://sleepy-sierra-31439.herokuapp.com/
-
 
 ---
 

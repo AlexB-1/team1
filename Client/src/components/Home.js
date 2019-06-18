@@ -1,5 +1,4 @@
 import React from "react";
-import gymImage from "../images/15428190060701082885942.jpg";
 import crown from "../images/crown.jpeg";
 import { Container } from "reactstrap";
 import PropTypes from "prop-types";
@@ -22,7 +21,7 @@ const Home = props => {
             the App to manage your development projects.
           </i>
         </p>
-        <div className="gymImage">
+        <div className="crownImage">
           <img src={crown} alt="crown" />
         </div>
       </Container>
