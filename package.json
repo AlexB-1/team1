@@ -1,7 +1,10 @@
 {
   "name": "tracking-app",
-  "version": "1.0.0",
   "description": "Agile Project Management App",
+  "version": "1.0.0",
+  "engines": {
+    "node": "8.12.0"
+  },
   "main": "server.js",
   "scripts": {
     "client-install": "npm install --prefix client",
@@ -24,8 +27,7 @@
     "express": "^4.16.4",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.5.4",
-    "react-router-dom": "^5.0.0",
-    "video-react": "^0.13.6"
+    "react-router-dom": "^5.0.0"
   },
   "devDependencies": {
     "nodemon": "^1.18.11"
