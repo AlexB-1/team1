@@ -1,16 +1,14 @@
 ---
 ---
-
-Tracking "Agile Project Management" Application
+TracKing Agile Project Management Application
 Configuration Instructions
 June 17, 2019
-
 ---
 
 ---
 
     Run live hosted on HerokuApp
-    	https://sleepy-sierra-31439.herokuapp.com/
+    	https://git.heroku.com/tracking-agile.git
 
 ---
 
@@ -46,8 +44,7 @@ June 17, 2019
     Deployment:
 
     	HEROKU
-    		sleepy-sierra-31439
-    			https://sleepy-sierra-31439.herokuapp.com/
+    		https://git.heroku.com/tracking-agile.git
 
 ---
 
