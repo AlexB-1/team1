@@ -25,9 +25,6 @@
     "reactstrap": "^8.0.0",
     "redux": "^4.0.1",
     "redux-thunk": "^2.3.0",
-    "uuid": "^3.3.2",
-    "@babel/polyfill": "^7.4.4",
-    "lodash": "^4.17.11",
     "socket.io-client": "^2.2.0"
   },
   "scripts": {
