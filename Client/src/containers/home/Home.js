@@ -5,22 +5,14 @@ import PropTypes from "prop-types";
 
 Container.propTypes = {
   fluid: PropTypes.bool
-  // applies .container-fluid class
 };
 
 const Home = props => {
   return (
     <div>
       <Container>
-        <h1>Welcome to TracKing!</h1>
+        <h1>TracKing ~ Agile Project Management Development Tools</h1>
         <hr />
-        <p>
-          The Agile Project Management Application. &nbsp;
-          <i>
-            Please login or register for a free account today and begin using
-            the App to manage your development projects.
-          </i>
-        </p>
         <div className="crownImage">
           <img src={crown} alt="crown" />
         </div>
