@@ -1,5 +1,6 @@
 import React from "react";
 import { Container } from "reactstrap";
+import RegisterModal from "../auth/RegisterModal";
 import PropTypes from "prop-types";
 
 Container.propTypes = {
