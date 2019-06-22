@@ -44,6 +44,7 @@ class RegisterModal extends Component {
     }
 
     // If authenticated, close modal
+    //***need to change this logic - should be if user added to db, close modal!! */
     if (this.state.modal) {
       if (isAuthenticated) {
         this.toggle();

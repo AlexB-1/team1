@@ -36,7 +36,7 @@ class AppNavbar extends Component {
           Admin
         </Link>
         <Link className="nav-link" to="/BackLog">
-          BackLog
+          Backlog
         </Link>
         <Link className="nav-link" to="/Sprint">
           Sprint
@@ -58,9 +58,9 @@ class AppNavbar extends Component {
 
     const guestLinks = (
       <Fragment>
-        <NavItem>
-          <RegisterModal />
-        </NavItem>
+        {/* <NavItem> */}
+        {/* <RegisterModal /> */}
+        {/* </NavItem> */}
         <NavItem>
           <LoginModal />
         </NavItem>
@@ -88,7 +88,8 @@ class AppNavbar extends Component {
             <Route
               exact
               path="/Admin"
-              component={isAuthenticated ? Admin : Home}
+              component={isAuthenticated ? Admin : Admin}
+              // need to set conditional back to home once admin register new user worked out
             />
             <Route
               exact
