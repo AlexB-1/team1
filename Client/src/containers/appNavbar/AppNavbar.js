@@ -7,6 +7,7 @@ import RegisterModal from "../auth/RegisterModal";
 import LoginModal from "../auth/LoginModal";
 import Logout from "../auth/Logout";
 import Home from "../home/Home";
+import Admin from "../admin/Admin";
 import BackLog from "../backlog/BackLog";
 import Sprint from "../sprint/Sprint";
 import Chat from "../chat/Chat";
@@ -31,7 +32,7 @@ class AppNavbar extends Component {
 
     const authLinks = (
       <Fragment>
-        <Link className="nav-link" to="/BackLog">
+        <Link className="nav-link" to="/Admin">
           Admin
         </Link>
         <Link className="nav-link" to="/BackLog">
@@ -83,6 +84,12 @@ class AppNavbar extends Component {
 
           <div className="main">
             <Route exact path="/" component={Home} />
+
+            <Route
+              exact
+              path="/Admin"
+              component={isAuthenticated ? Admin : Home}
+            />
             <Route
               exact
               path="/BackLog"
