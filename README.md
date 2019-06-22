@@ -1,27 +1,34 @@
 ---
 ---
 TracKing Agile Project Management Application
-Configuration Instructions
-June 17, 2019
+Configuration & Run Instructions
+June 21, 2019
 ---
 
 ---
 
     Setup & Run Instructions:
 
-    	1.	Install Node Modules:
-    			a.  npm install (client)
-    			b.  npm install (server)
+    	Install Node Modules:
 
-    	2.  Local Run Options:
-    	    a.	npm run dev
-    			    runs client & server simultaneously using concurrently
+    		1.  Client-Side
+    			i. 	"cd client"
+    			ii.	"npm install"
 
-    	    b.	npm run client
-    			    http://localhost:3000
+    		2.  Server-Side
+    			i.	"cd ../"
+    			ii.	"npm install"
 
-    	    c.	npm run server
-    			    http://localhost:5000
+    		3.	Local Run Options:
+
+    			a.	run client & server simultaneously using concurrently
+    				i.	"npm run dev"
+
+    			b.	run only client on http://localhost:3000
+    				i.	"npm run client"
+
+    			c.	run only server on http://localhost:5000
+    				i. "npm run server"
 
 ---
 
