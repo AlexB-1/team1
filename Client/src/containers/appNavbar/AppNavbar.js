@@ -3,13 +3,13 @@ import { BrowserRouter as Router, Link, Route } from "react-router-dom";
 import { Collapse, Navbar, NavbarToggler, Nav, NavItem } from "reactstrap";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
-import RegisterModal from "./auth/RegisterModal";
-import LoginModal from "./auth/LoginModal";
-import Logout from "./auth/Logout";
-import Home from "./Home";
-import BackLog from "./BackLog";
-import Sprint from "./Sprint";
-import Chat from "./Chat";
+import RegisterModal from "../auth/RegisterModal";
+import LoginModal from "../auth/LoginModal";
+import Logout from "../auth/Logout";
+import Home from "../home/Home";
+import BackLog from "../backlog/BackLog";
+import Sprint from "../sprint/Sprint";
+import Chat from "../chat/Chat";
 
 class AppNavbar extends Component {
   state = {

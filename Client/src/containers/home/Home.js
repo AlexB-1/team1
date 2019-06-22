@@ -1,5 +1,5 @@
 import React from "react";
-import crown from "../images/crown.jpeg";
+import crown from "../../images/crown.png";
 import { Container } from "reactstrap";
 import PropTypes from "prop-types";
 
